@@ -1,0 +1,41 @@
+#include<stdio.h>
+/*
+  mutumba benjamin mubeezi B24245
+
+
+
+  create input for the list 
+  create input for the first value
+  assign the largest to the first value 
+  then compare the first figure with each figure in the list 
+  if the figure in the list is larger than the first figure make it the largest
+  print out the output
+*/
+
+
+
+int largest(){
+int k,d,h,i;
+printf("enter number of figures:");
+scanf("%d",&d);
+
+printf("enter the figure:");
+scanf("%d",&h);
+for (i=2;i<=d;++i)
+{
+   printf("enter the figure:"); 
+   scanf("%d",&k);
+
+if(k>h){
+   h=k;
+}
+}
+printf("largest is %d",h);
+
+}
+int main(){
+largest();
+
+
+
+}
